@@ -1,0 +1,7 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+0 0 * * * php /home/deeksha/web_pages/TubeKit/ytdSpamDetection/collectOnce.php
+0 1 * * * php /home/deeksha/web_pages/TubeKit/ytdSpamDetection/collectEverytime.php
+0 2 * * * php /home/deeksha/web_pages/TubeKit/ytdSpamDetection/downloadVideos.php
+0 4 * * * php /home/deeksha/web_pages/TubeKit/ytdSpamDetection/convertVideos.php
